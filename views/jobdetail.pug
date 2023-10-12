@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" type="text/css" href="../static/style.css" /> 
+       <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>  
+        Project
+    </title>
+    style
+       include ../static/style.css
+  </head>
+  <body>
+   
+    <header>
+      <a href="#" class="logo"><i class='bx bxs-book-alt'></i>FacultyFixerHuB</a>
+   
+      <span onclick="myfunction()">&#9776</span>
+      <ul class="navbar" id="menu">
+        <li href><a href="index.pug">Home</a></li>
+        <li  href= 'test.html';><a href="#">Find Job</a></li>
+        <li href = 'scholarship.html'><a href="#">Job List</a></li>
+        <li href = 'scholarship.html'><a href="#">Add Job</a></li>
+        <li><a href="contact.pug">Contact</a></li>
+      </ul>
+
+      <div class="login-btn">
+        <a href="#" class="sign" style="color:brown;" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign In</a>
+        <a href="#" class="contact"><i class='bx bx-phone' style="font-size:25px;" onclick="Function()"></i></a>
+      </div>
+    </header>
+
+    
+        
+    <div id="id01" class="modal">
+  
+      <form class="modal-content animate" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+         
+        </div>
+        <div class="containers">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" id="uname"  class="form-control" >
+    
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="password" id="password" class="form-control" >
+            
+          <button type="submit" class="button">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+        
+
+        <div class="containers" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+
+    <div class="containers">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="d-flex align-items-center">
+                    <div class="text">
+                        <h3>Professor - College of Engineering, Virar-East</h3>
+                        <span><i></i>Virar-East, Mumbai</span>
+                        <span><i></i>Full Time</span>
+                        <span><i></i>Competitive Salary</span>
+                    </div>
+                </div>
+    
+                <div class="description">
+                    <h4>Job Description</h4>
+                    <p>We are seeking a dedicated Professor for our esteemed College of Engineering in Virar-East, Mumbai. Join us in shaping the future of engineering education.</p>
+                    <h4>Responsibilities</h4>
+                    <p>The Professor will be responsible for delivering high-quality lectures, conducting research, and mentoring students in their academic pursuits.</p>
+                    <ul>
+                        <li><i></i>Deliver engaging lectures and seminars</li>
+                        <li><i></i>Conduct cutting-edge research in your field</li>
+                        <li><i></i>Mentor and guide students</li>
+                    </ul>
+                    <h4>Qualifications</h4>
+                    <p>The ideal candidate should have a Ph.D. in their field, a passion for teaching, and a strong commitment to research.</p>
+                    <ul>
+                        <li><i></i>Ph.D. in relevant field</li>
+                        <li><i></i>Teaching experience</li>
+                        <li><i></i>Research publications</li>
+                    </ul>
+                </div>
+    
+                <div class="apply">
+                    <h4>Apply For The Job</h4>
+                    <form action="/jobdetail" method="post">
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <input type="text" name="name" placeholder="Your Name" >
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input type="email" name="email" placeholder="Your Email" >
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input type="number"  name="phone" placeholder="Phone Number">
+                            </div>
+                            <div class="col-12 col-sm-6"> 
+                                <input type="date" name="date" >
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input type="text" name="caste" placeholder="Caste" >
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input type="file" name="file">
+                            </div>
+                            <div class="col-12">
+                                <textarea rows="5" name="letter" placeholder="Cover Letter" ></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit">Apply Now</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    
+            <div class="col-lg-4">
+                <div class="summary">
+                    <h4>Job Summary</h4>
+                    <p><i></i>Published On: 18-09-2023</p>
+                    <p><i></i>Vacancy: 4 Positions</p>
+                    <p><i></i>Job Nature: Full Time</p>
+                    <p><i></i>Salary: Competitive</p>
+                    <p><i></i>Location: Virar-East, Mumbai</p>
+                    <p><i></i>Application Deadline: 28-09-2023</p>
+                </div>
+                <div class="college-details">
+                    <h4>College Details</h4>
+                    <p>The College of Engineering, Virar-East, is committed to excellence in education and research. Join us in shaping the future of engineering.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+     
+
+     
+         <div class="bottom">
+          <div class="doun"><p>About us</p></div><br>
+            <div class="thought"><p>We are a team of experienced developers who are passionate about education and technology.<br> Our goal is to create a study website that empowers learners to achieve their academic goals and enhance their knowledge. <br> <br>Thank you for choosing our study website. We hope that you find it useful and informative. If you have any questions or suggestions, please don't hesitate to contact us.</p>
+               <div class="Instagram">
+                  <p class="logo1"><i class='bx bxl-instagram-alt'></i></p>
+                  <p class="logo2"><i class='bx bxl-facebook-circle'></i></p>
+                  <p class="logo3"><i class='bx bxl-linkedin-square'></i></p>
+               </div>
+            </div>
+          </div>
+       
+   
+
+  </body>
+  script
+     include ../static/scripts.js
+  </html>

@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" type="text/css" href="../static/style.css" /> 
+       <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>  
+        Project
+    </title>
+    style
+       include ../static/style.css
+  </head>
+  <body>
+   
+    <header>
+      <a href="#" class="logo"><i class='bx bxs-book-alt'></i>FacultyFixerHuB</a>
+   
+      <span onclick="myfunction()">&#9776</span>
+      <ul class="navbar" id="menu">
+        <li href><a href="index.pug">Home</a></li>
+        <li  href= 'test.html';><a href="#">Find Job</a></li>
+        <li href = 'scholarship.html'><a href="#">Job List</a></li>
+        <li href = 'scholarship.html'><a href="#">Add Job</a></li>
+        <li><a href="contact.pug">Contact</a></li>
+      </ul>
+
+      <div class="login-btn">
+        <a href="#" class="sign" style="color:brown;" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign In</a>
+        <a href="#" class="contact"><i class='bx bx-phone' style="font-size:25px;" onclick="Function()"></i></a>
+      </div>
+    </header>
+
+    
+        
+    <div id="id01" class="modal">
+  
+      <form class="modal-content animate" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+         
+        </div>
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" id="uname"  class="form-control" >
+    
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="password" id="password" class="form-control" >
+            
+          <button type="submit" class="button">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+        
+
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+
+    <div class="color">
+        <div class="am"><p>Discover the Ideal Job That Matches Your Deserved Talent and Skills</p></div>
+        <div class="kam"><p>Tips and resources for optimizing your job search to land a role that suits you best.<br>
+         </div>
+        <div class="nam">
+          <li><img src="../static/img/about-1.jpg" width="400px" height="400px" class="fiveth"><p class="classs">Vasai-Virar, Maharashtra</p><button  class="class" ><a href="joblist.pug">Explore</a></button></li>
+          <li><img src="../static/img/about-2.jpg" width="400px" height="400px" class="sixth"><p class="classs">Mumbai, Maharashtra</p> <button  class="class" onclick="window.location.href = 'jee.html';">Explore</button></li>
+        </div>
+        
+    
+    
+        <div class="nam">
+          <li><img src="../static/img/about-3.jpg" width="400px" height="400px" class="fiveth"><p class="classs">Pune ,  Maharashtra</p><button  class="class" onclick="window.location.href = 'jee.html';">Explore</button></li>
+          <li><img src="../static/img/about-4.jpg" width="400px" height="400px" class="sixth"><p class="classs">Thane ,  Maharashtra</p> <button  class="class" onclick="window.location.href = 'jee.html';">Explore</button></li>
+        </div>
+    
+        <div class="nam">
+          <li><img src="../static/img/femaleteacher_0.jpg" width="400px" height="400px" class="fiveth"><p class="classs">Navi Mumbai, Maharashtra</p><button  class="class" onclick="window.location.href = 'jee.html';">Explore</button></li>
+          <li><img src="../static/img/r16_90_5641_3840_w5760_h3840_fmax.jpg" width="400px" height="400px" class="sixth"><p class="classs">Palghar, Maharashtra </p> <button  class="class" onclick="window.location.href = 'jee.html';">Explore</button></li>
+        </div>
+  </div>
+     
+  <div class="bottom">
+    <div class="doun"><p>About us</p></div><br>
+      <div class="thought"><p>We understand the challenges of faculty recruitment, and our platform simplifies the process.<br>  Whether you're an institution seeking qualified educators or a teacher looking for the right academic opportunity, <br>we're here to connect talent with need and elevate the quality of education.</p>
+         <div class="Instagram">
+            <p class="logo1"><i class='bx bxl-instagram-alt'></i></p>
+            <p class="logo2"><i class='bx bxl-facebook-circle'></i></p>
+            <p class="logo3"><i class='bx bxl-linkedin-square'></i></div>
+         </div>
+      </div>
+    <div>
+  </div>
+       
+   
+
+  </body>
+  script
+     include ../static/scripts.js
+  </html>

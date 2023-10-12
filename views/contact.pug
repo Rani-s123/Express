@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" type="text/css" href="../static/style.css" /> 
+       <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>  
+        Project
+    </title>
+    style
+       include ../static/style.css
+  </head>
+  <body>
+   
+    <header>
+      <a href="#" class="logo"><i class='bx bxs-book-alt'></i>FacultyFixerHuB</a>
+   
+      <span onclick="myfunction()">&#9776</span>
+      <ul class="navbar" id="menu">
+        <li href><a href="index.pug">Home</a></li>
+        <li  href= 'test.html';><a href="#">Find Job</a></li>
+        <li href = 'scholarship.html'><a href="#">Job detail</a></li>
+        <li href = 'scholarship.html'><a href="#">Add Job</a></li>
+        <li><a href="contact.pug">Contact</a></li>
+      </ul>
+
+      <div class="login-btn">
+        <a href="#" class="sign" style="color:brown;" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign In</a>
+        <a href="#" class="contact"><i class='bx bx-phone' style="font-size:25px;" onclick="Function()"></i></a>
+      </div>
+    </header>
+
+    
+        
+    <div id="id01" class="modal">
+  
+      <form class="modal-content animate" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+         
+        </div>
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" id="uname"  class="form-control" >
+    
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="password" id="password" class="form-control" >
+            
+          <button type="submit" class="button">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+        
+
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+
+         <div class="max">
+           <div class="sixth">
+              <p><strong>Contat Number :</strong> 9837682478 <br><br> <strong>Email :</strong> rajpurohitrani04@gmail.com </p>
+           </div>
+     
+           <div>
+             <div class="fadeInUp" data-wow-delay="0.1s">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d453128.6399445966!2d72.73444598473269!3d19.082197550371584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c630a1d6f0d7%3A0x5d8fb6c0a154f3f6!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1664383570024!5m2!1sen!2sin" width="530" height="470" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+             </div>
+           </div>
+         </div>
+     
+         <div class="bottom">
+          <div class="doun"><p>About us</p></div><br>
+            <div class="thought"><p>We are a team of experienced developers who are passionate about education and technology.<br> Our goal is to create a study website that empowers learners to achieve their academic goals and enhance their knowledge. <br> <br>Thank you for choosing our study website. We hope that you find it useful and informative. If you have any questions or suggestions, please don't hesitate to contact us.</p>
+               <div class="Instagram">
+                  <p class="logo1"><i class='bx bxl-instagram-alt'></i></p>
+                  <p class="logo2"><i class='bx bxl-facebook-circle'></i></p>
+                  <p class="logo3"><i class='bx bxl-linkedin-square'></i></p>
+               </div>
+            </div>
+          </div>
+       
+   
+
+  </body>
+  script
+     include ../static/scripts.js
+  </html>

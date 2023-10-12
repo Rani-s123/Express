@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" type="text/css" href="../static/style.css" /> 
+       <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>  
+        Project
+    </title>
+    style
+       include ../static/style.css
+  </head>
+  <body>
+   
+    <header>
+      <a href="#" class="logo"><i class='bx bxs-book-alt'></i>FacultyFixerHuB</a>
+   
+      <span onclick="myfunction()">&#9776</span>
+      <ul class="navbar" id="menu">
+        <li href><a href="index.pug">Home</a></li>
+        <li  href= 'test.html';><a href="job.pug">Find Job</a></li>
+        <li ><a href="joblists.pug">Job List</a></li>
+        <li href = 'scholarship.html'><a href="#">Add Job</a></li>
+        <li><a href="contact.pug">Contact</a></li>
+      </ul>
+
+      <div class="login-btn">
+        <a href="#" class="sign" style="color:brown;" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign In</a>
+        <a href="#" class="contact"><i class='bx bx-phone' style="font-size:25px;" onclick="Function()"></i></a>
+      </div>
+    </header>
+
+    
+        
+    <div id="id01" class="modal">
+  
+      <form class="modal-content animate" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+         
+        </div>
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" id="uname"  class="form-control" >
+    
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="password" id="password" class="form-control" >
+            
+          <button type="submit" class="button">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+        
+
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+
+    <div id="joblist">
+       <div class="job-listing">
+          <h1>Job Listing</h1>    
+          <div class="tab-content" id="full">
+              <div id="tab-1" class="job-item">
+                 <div class="job-details">
+                   <img src="../static/img/download.png" alt="" class="job-image">
+                    <div class="job-info">
+                      <h5 class="job-title">Professors</h5>
+                       <div class="job">
+                          <span class="job-location">Virar, Maharashtra</span>
+                          <span class="job-type">Full Time</span>
+                          <span class="job-salary">70k - 80k</span>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="job-actions">
+                    <a href=""><i></i></a>
+                    <a href="jobdetail.pug" class="apply-button">Apply Now</a>
+                 </div>
+                  <small class="job-date"><i></i>Date Line: 01 Sep, 2023</small>
+              </div>
+             
+              <div id="tab-1" class="job-item">
+                 <div class="job-details">
+                    <img src="../static/img/1631868334MITLogo.webp" alt="" class="job-image">
+                     <div class="job-info">
+                        <h5 class="job-title">Department Chairs</h5>
+                          <div class="job">
+                            <span class="job-location">Vasai, Maharashtra</span>
+                            <span class="job-type">Part Time</span>
+                            <span class="job-salary">90k - 95k</span>
+                          </div>
+                     </div>
+                 </div>
+                  <div class="job-actions">
+                     <a href=""><i></i></a>
+                     <a href="job-detail.html" class="apply-button">Apply Now</a>
+                  </div>
+                  <small class="job-date"><i></i>Date Line: 01 Oct, 2023</small>
+              </div>
+
+              <div id="tab-1" class="job-item">
+                 <div class="job-details">
+                    <img src="../static/img/307378992_389699359996828_8203984750889196234_n.jpg" alt="" class="job-image">
+                    <div class="job-info">
+                      <h5 class="job-title">Lecturers</h5>
+                       <div class="job">
+                          <span class="job-location">Virar-West, Maharashtra</span>
+                          <span class="job-type">Full Time</span>
+                          <span class="job-salary">70k - 75k</span>
+                       </div>
+                    </div>
+                 </div>
+                 <div class="job-actions">
+                    <a href=""><i></i></a>
+                    <a href="job-detail.html" class="apply-button">Apply Now</a>
+                 </div>
+                 <small class="job-date"><i></i>Date Line: 01 Nov, 2023</small>
+              </div>
+           
+              <div id="tab-1" class="job-item">
+                <div class="job-details">
+                   <img src="../static/img/coeta_logo.png" alt="" class="job-image">
+                   <div class="job-info">
+                      <h5 class="job-title">Administrators</h5>
+                      <div class="job">
+                         <span class="job-location">Vasai, Maharashtra</span>
+                         <span class="job-type">Full Time</span>
+                         <span class="job-salary">70k - 80k</span>
+                      </div>
+                   </div>
+                </div>
+                 <div class="job-actions">
+                   <a href=""><i></i></a>
+                   <a href="job-detail.html" class="apply-button">Apply Now</a>
+                 </div>
+                  <small class="job-date"><i></i>Date Line: 01 Sep, 2023</small>
+              </div>
+              <a href="" class="browse-more">Browse More Jobs</a>
+          </div>
+       </div>
+  </div>
+   
+     
+
+<div class="bottom">
+   <div class="doun"><p>About us</p></div><br>
+     <div class="thought"><p>We understand the challenges of faculty recruitment, and our platform simplifies the process.<br>  Whether you're an institution seeking qualified educators or a teacher looking for the right academic opportunity, <br>we're here to connect talent with need and elevate the quality of education.</p>
+        <div class="Instagram">
+           <p class="logo1"><i class='bx bxl-instagram-alt'></i></p>
+           <p class="logo2"><i class='bx bxl-facebook-circle'></i></p>
+           <p class="logo3"><i class='bx bxl-linkedin-square'></i></div>
+        </div>
+     </div>
+   <div>
+</div>
+       
+   
+</body>
+  script
+     include ../static/scripts.js
+     
+</html>
